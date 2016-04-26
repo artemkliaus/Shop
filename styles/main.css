@@ -1,0 +1,286 @@
+h2, h3, p, div {font-family: sans-serif;}
+body {
+	background: #edf1f2;
+	
+}
+.clear {
+	clear: both;
+}
+/*Header CSS*/
+header {
+	height: 110px;
+	width: 100%;
+	background: #ffffff;	
+	box-shadow: 0 0 1px gray;
+	position: relative;	
+}
+#topHeader, #bottomHeader {
+	width: 1170px;
+    height: 60px;
+    margin: 0 auto 10px;	
+}
+#bottomHeader {
+	border-top: 1px solid #dde2e6;
+	height: 40px;
+    margin: 0 auto;
+}
+#topHeader img {position: absolute; margin-top: 20px;}
+
+.input-group {
+	position: relative;
+	display: block;
+}
+.form-control, button.search {
+	float: left;
+    width: 355px;
+    height: 37px;
+    margin: 10px 0 0 180px;
+    padding: 0;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #c4cacf;
+    font-size: 15px;
+    padding-left: 15px;
+}
+button.search {
+	margin: 10px 0 0 0;
+    width: 60px;
+    height: 39px;
+    border-radius: 0 5px 5px 0;
+    background: #2a96d4;
+    border: 0;
+}
+.dropSearch {
+	float: right;
+}
+.buyAncors {
+	float: right;
+    margin: 20px 125px 0 0;
+    display: block;
+    position: relative;    
+    width: 396px;
+    height: 25px;    
+}
+.buyItems {
+	position: inherit;
+    display: inline-block;
+    width: 110px;
+    height: 25px;    
+    margin-left: 30px;
+    float: right;
+    background-size: 10px;
+    line-height: 1.5;
+            
+}
+.buyItems:first-child {
+	margin: 0px;
+	width: 140px;
+}
+.buyItems:last-child {
+	margin: 0px;
+	width: 90px;
+}
+.picSprite {
+	float: left;
+    width: 23px;
+    height: 25px;
+    background: url(../img/headPicSprite.png) no-repeat;
+    background-position: 2px 3px;
+    margin-right: 5px;    
+    background-size: 90px;
+}
+div#sp1 {	
+    background-position: -46px 4px;
+}
+div#sp2 {
+    background-position: -24px 4px;
+}
+div#sp4 {
+    float: right;
+    background-position: -68px 9px;
+    margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	display: inline-block;
+    padding: 13px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+nav ul li:last-child {
+	float: right;
+	color: #a3a9ad;
+}
+nav ul li:hover {
+	background: #62bf43;
+	color: #ffffff;
+	cursor: pointer;
+}
+/*END Header CSS*/
+
+/*Slider CSS*/
+
+.carousel {
+	margin: 40px auto 0;
+    width: 1170px;
+    height: 400px;
+    background: lightblue;
+}
+
+/*END Slider CSS*/
+
+.dailyDeals {
+	width: 1170px;
+	height: 370px;
+	margin: 40px auto 0;
+	background: #ffffff;
+	border: 1px solid #dde2e6;
+	border-radius: 5px;
+}
+.dailyDeals h2 {
+	float: left;
+    display: block;    
+    height: 50px;
+    width: 1040px;
+    font-size: 25px;
+    padding: 20px 0 0 20px;
+    border-bottom: 1px solid #dde2e6;
+
+}
+.dailyDeals h3 {
+	display: block;
+	float: right;
+	width: 110px;
+	height: 45px;
+	padding: 25px 0 0 0;
+	color: #2a96d4;
+	font-weight: 600;
+	font-size: 13px;
+	text-align: center;	
+	border-bottom: 1px solid #dde2e6;
+}
+.dailyItems, .itemsSlider {
+	position: relative;
+	float: left;
+	width: 291px;
+    height: 297px;
+	border-right: 1px solid #dde2e6;
+	
+}
+.dailyItems:last-child {
+	border: none;
+}
+.dailyItems img {
+	display: block;
+	margin: 30px auto 0;
+}
+.dailyItems p {	
+	text-align: center;
+	padding-top: 5px;    
+    font-size: 18px;
+}
+.discount {
+	position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 70px;
+    height: 25px;
+    background: #f9ad0b;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}
+.dailyItems .discount.last {
+	background: #ee320c;
+    width: 100px;
+}
+p.firstP {
+	padding-top: 20px;
+}
+
+p.costsItems {
+	padding-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.itemsProdSmall p.costsItems {	
+    font-size: 15px;    
+}
+.dailyItems span, .itemsProdSmall p span{
+    margin-right: 20px;
+    color: #a3a9ad;
+    text-decoration: line-through;
+}
+.itemsSlider {
+	float: left;
+	width: 580px;
+}
+.itemsProdSmall  {
+	float: left;
+    width: 294px;
+    height: 150px;
+}
+.itemsProdSmall#eProd1 {
+	border-right: 1px solid #dde2e6;
+    border-bottom: 1px solid #dde2e6;
+}
+.itemsProdSmall#eProd2 {
+	border-bottom: 1px solid #dde2e6;    
+}
+.itemsProdSmall#eProd3 {
+	border-right: 1px solid #dde2e6;    
+}
+.itemsProdSmall img {
+	float: left;
+	padding: 30px 20px;
+}
+.itemsProdSmall p {
+	float: left;
+    display: block;
+    width: 135px;
+    height: 80px;
+    font-size: 18px;
+    padding: 20px 0 0 0;
+    line-height: 1.3;
+}
+.itemsSlider {
+	background: url(../img/laptopElectro.jpg) no-repeat;
+    background-position: 210px 15px;
+}
+.itemsSlider h2 {
+	display: block;
+    width: 300px;
+    margin: 54px 0 0 0;
+    line-height: 1.5;
+    font-weight: 800;
+    font-size: 23px;
+    border: none;
+}
+.itemsSlider .discount {
+	width: 120px;	
+}
+.itemsSlider .itemButtonBuy a{
+	position: absolute;
+    top: 205px;
+    left: 30px;
+    width: 225px;
+    height: 40px;
+    background: #62bf43;
+    border-radius: 5px;
+    line-height: 2.5;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;    
+}
+.itemButtonBuy span {
+	padding-left: 10px;
+	border-left: 1px solid #4e9936;
+	margin-left: 10px; 
+}
