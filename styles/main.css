@@ -122,15 +122,46 @@ nav ul li:hover {
 /*Slider CSS*/
 
 .carousel {
+	position: relative;
 	margin: 40px auto 0;
     width: 1170px;
     height: 400px;
     background: lightblue;
+   
+}
+.carousel #slidesContainer{
+	margin: 0 auto;
+	width: 1170px;
+	height: 400px;
+	overflow: auto;
+}
+.carousel .controls {
+	position: absolute;
+    top: 170px;    
+    width: 50px;
+    height: 50px;
+	border: 1px solid #bcc2ba;
+	border-radius: 26px;
+	cursor: pointer;
+	background: url(../img/arrows.png);
+	background-size: 210px;
+}
+.carousel #leftCtrl {left: 20px; background-position: 7px -6px;}
+.carousel #rightCtrl {right: 20px; background-position: -21px -5px;}
+.carousel h2 {
+	position: absolute;
+    top: 120px;
+    left: 370px;
+    width: 430px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
 }
 
 /*END Slider CSS*/
 
-.dailyDeals {
+.blocks {
 	width: 1170px;
 	height: 370px;
 	margin: 40px auto 0;
@@ -138,7 +169,7 @@ nav ul li:hover {
 	border: 1px solid #dde2e6;
 	border-radius: 5px;
 }
-.dailyDeals h2 {
+.blocks h2 {
 	float: left;
     display: block;    
     height: 50px;
@@ -148,7 +179,7 @@ nav ul li:hover {
     border-bottom: 1px solid #dde2e6;
 
 }
-.dailyDeals h3 {
+.blocks h3 {
 	display: block;
 	float: right;
 	width: 110px;
@@ -194,6 +225,11 @@ nav ul li:hover {
     line-height: 2;
     text-align: center;
 }
+.discount.slides {
+	top: 70px;
+    width: 120px;
+    left: 520px;
+}
 .dailyItems .discount.last {
 	background: #ee320c;
     width: 100px;
@@ -224,6 +260,7 @@ p.costsItems {
 	float: left;
     width: 294px;
     height: 150px;
+    overflow: hidden;
 }
 .itemsProdSmall#eProd1 {
 	border-right: 1px solid #dde2e6;
@@ -237,7 +274,7 @@ p.costsItems {
 }
 .itemsProdSmall img {
 	float: left;
-	padding: 30px 20px;
+	padding: 20px 20px;	
 }
 .itemsProdSmall p {
 	float: left;
@@ -248,9 +285,17 @@ p.costsItems {
     padding: 20px 0 0 0;
     line-height: 1.3;
 }
-.itemsSlider {
+.itemsSlider.electro {
 	background: url(../img/laptopElectro.jpg) no-repeat;
     background-position: 210px 15px;
+}
+.itemsSlider.fashionSl {
+	background: url(../img/manFashion.jpg) no-repeat;
+	background-position: 250px 0px;
+}
+.itemsSlider.sportSl {
+	background: url(../img/sportBag.jpg) no-repeat;
+	background-position: 349px 12px;
 }
 .itemsSlider h2 {
 	display: block;
@@ -264,6 +309,11 @@ p.costsItems {
 .itemsSlider .discount {
 	width: 120px;	
 }
+.discount.new {
+	width: 50px;
+	background: #6e747a;
+	line-height: 2.2;
+}
 .itemsSlider .itemButtonBuy a{
 	position: absolute;
     top: 205px;
@@ -272,15 +322,106 @@ p.costsItems {
     height: 40px;
     background: #62bf43;
     border-radius: 5px;
-    line-height: 2.5;
+    line-height: 2.8;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;    
 }
 .itemButtonBuy span {
-	padding-left: 10px;
+	padding-left: 20px;
 	border-left: 1px solid #4e9936;
-	margin-left: 10px; 
+	margin-left: 20px; 
 }
+/*Featured Collections Styles*/
+.blocks.featured {height: 1110px;}
+.blocks.featured h2 {width: 970px;}
+.blocks.featured h3 {width: 180px;}
+.colBlock {
+	width: 350px;
+	height: 470px;
+	float: left;	
+	margin: 20px;
+}
+.miniImgBlock {
+	border-left: 1px;
+	border-right: 1px;	
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #dde2e6;
+	margin-top: -3px;
+	height: 100px;
+}
+.miniImgBlock img {padding: 0 5px;}
+.miniImgBlock img:first-child {border-right: 1px solid #dde2e6;}
+.miniImgBlock img:last-child {border-left: 1px solid #dde2e6;}
+.colBlock p { 
+	text-align: center;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.colBlock p:first-child {margin-top: 30px;}
+.colBlock .colorG {color: #a3a9ad;}
+.colBlock .colorB {color: #2a96d4;}
+/*Featured Collections Styles*/
+
+footer {
+	width: 100%;
+	height: 370px;	
+	margin: 40px 0 7px 0;
+    background: #202326;
+    box-shadow: 0px 8px 10px black;
+}
+
+footer .headFoot {
+	background: #ffffff;	
+	text-align: center;
+	padding: 40px 0 40px 0;
+	
+}
+footer .headFoot h2 {font-size: 22px; margin-bottom: 25px;}
+footer .headFoot input { 
+	width: 340px; 
+	height: 30px;
+	border: 1px solid #c4cacf;
+	border-radius: 5px;
+}
+footer .headFoot button {
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+	background: #2a96d4;
+	color: white;
+	border: none;
+}
+.bottomLinks {
+	width: 1170px;
+	margin: 0 auto;
+    padding: 30px 0;
+}
+.bottomLinks h3 {
+	color: #a3a9ad;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.bottomLinks li {padding-bottom: 10px; font-size: 14px; color: #ffffff;}
+.bottomLinks li a {
+	color: #ffffff;	
+	text-decoration: none;
+}
+.boxesLinks {float: left; width: 290px;}
+.boxesLinks span {
+	display: inline-block;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 15px;
+    line-height: 1.4;
+    border-radius: 5px;
+    font-size: 27px;
+}
+.boxesLinks #face {background: #44609d;}
+.boxesLinks #goo {background: #d73d32;}
+.boxesLinks #linkd {background: #0177b5;}
